@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #3d6413;
+    background-color: #c6bb1b;
+    background-color: #e0f048;
+    background-color: #026635;
+    background-color: #09493d;
+    background-color: #e20a0a;
+    background-color: #ff1493;
+    */
+
+
+}
+
+body {
+    background-image: url(./img/wallpaperbetter.com_1024x600.jpg);
+
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 1rem;
+    background-color: #0266367e;
+    z-index: 100;
+
+}
+
+.imagen__logo {
+    padding-top: 5px;
+    width: 65px;
+
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 1.8rem;
+    gap: 2rem;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu__item a:hover {
+    color: #00bbff;
+    transition: color 0.7s linear 0.2s;
+
+}
+
+
+.contenido {
+    padding-top: 135px;
+    display: grid;
+    grid-template-columns: 75% 24%;
+    grid-template-rows: 1fr 1fr 1fr 0.8fr;
+    grid-template-areas:
+        "contenido_inicio       contenido_lista"
+        "contenido_personajes   contenido_personajes"
+        "contenido_temporadas   contenido_temporadas"
+        "contenido_encuesta     contenido_encuesta";
+    background: rgb(9, 73, 61);
+    background: linear-gradient(29deg, rgba(9, 73, 61, 1) 12%, rgba(198, 187, 27, 0.6348039215686274) 49%, rgba(9, 73, 61, 0.9233193277310925) 83%);
+}
+
+.contenido_inicio {
+    grid-area: contenido_inicio;
+
+}
+
+.contenido_lista {
+    grid-area: contenido_lista;
+    background-color: #c6ba1b93;
+    border: 2px solid #e0f048;
+    box-shadow: 5px -5px 2px black;
+    max-height: 82vh;
+
+}
+
+.contenido_personajes {
+    grid-area: contenido_personajes;
+    padding-top: 16vh;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.contenido_temporadas {
+    grid-area: contenido_temporadas;
+    padding-top: 16vh;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.contenido_encuesta {
+    grid-area: contenido_encuesta;
+    padding-top: 50vh;
+    margin-left: 30px;
+}
+
+.contenido_inicio h1 {
+    padding-top: 50px;
+    margin: 35px;
+    font-size: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+    color: #dff048d3;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+
+}
+
+.parrafo1 h2 {
+    margin: 15px;
+
+}
+
+.parrafo1 {
+    padding-top: 25px;
+    margin: 45px;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.2rem;
+
+}
+
+.lista_imagen img {
+
+    padding: 5px;
+    margin-left: 10px;
+    width: 22vw;
+
+}
+
+.contenido_lista ul {
+    margin-left: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.95rem;
+
+
+}
+
+.titulo_personaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+
+.tarjeta {
+    width: 15vw;
+    border: 1px solid #e0f048;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tarjeta img {
+    max-height: 35vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.nombre_tarjeta {
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.tarjeta p {
+    display: none;
+    padding: 10px;
+    overflow: cover;
+
+}
+
+.tarjeta:hover p {
+    display: block;
+    position: absolute;
+    color: #00bbff;
+    background-color: black;
+    width: 15vw;
+    opacity: 0.8;
+    cursor: pointer;
+
+
+
+}
+
+.tempo {
+    width: 15vw;
+    border: 1px solid #e0f048;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tempo img {
+    max-height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tempo p {
+    padding: 10px;
+    overflow: cover;
+    flex-grow: 1;
+
+}
+
+.titulo_temporadas {
+
+    font-size: 3rem;
+
+}
+
+.nombre_temporada {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+
+
+
+}
+
+.titulo_encuesta {
+    font-size: 2rem;
+    
+    
+
+}
+
+.formulario {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    text-align: center;
+}
+.caja {
+    display: flex;
+    justify-content: space-between ;
+
+}
+label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+input[type="checkbox"] {
+    margin-bottom: 25px;
+}
+.submitBtn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    background-color: #0056B3;
+}
+
+footer {
+    background-color: #00bbff;
+    
+}
+
+.footer h2 {
+    font-size: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+/** {
+    Margin:0;
+    padding:0;
+   }*/
+   
+
+
+.titulo {
+    color: blue;
+    text-align: center;
+}
+
+.subtitulo {
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nombre{
+    text-decoration: underline ;
+}
+.section p {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-image: url(./img3/ZC8MaI.jpg);
+    background-repeat:round;
+}
+
+.section2{
+    background-image: url(./img3/ZC8MaI.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.lista_ul {
+    color: blueviolet;
+    list-style-type: none;
+    font-style: italic;
+
+}
+
+.lista_ol{
+    list-style-position:inside;
+    list-style-type:lower-roman;
+}
